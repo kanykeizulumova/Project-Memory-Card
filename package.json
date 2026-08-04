@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
+  "name": "project-memory-card",
   "version": "0.1.0",
+  "homepage": "https://kanykeizulumova.github.io/Project-Memory-Card",
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.101.4",
@@ -15,6 +16,8 @@
     "zustand": "^5.0.14"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,5 +41,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://ringsdb.com"
+  "proxy": "https://ringsdb.com",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
