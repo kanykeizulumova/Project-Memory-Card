@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 
 const fetchCards = async () => {
-    const response = await fetch('/api/public/cards/');
+    const response = await fetch('https://ringsdb.com/api/public/cards/');
     if (!response.ok) throw new Error('Ошибка сети');
     return response.json();
 };
