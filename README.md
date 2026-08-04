@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# RingsDB Memory Card Game 🃏
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **RingsDB Memory Card Game**! This is a simple, interactive web game built with React, Zustand, and React Query, fetching real card data from the RingsDB API.
+### This game is part of [The Odin Project React Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/react)
 
-## Available Scripts
+## 🎯 The Goal of the Game
+The objective is simple: **test your memory**. 
+You will be presented with a set of 10 unique cards. To win, you must click on each of the 10 cards exactly **once**.
 
-In the project directory, you can run:
+## 🎮 How to Play
+1. **Click any card** to start the game. You will earn 1 point.
+2. After every click, the cards will **shuffle** and change their positions randomly.
+3. You must remember which cards you have already clicked.
+4. **Click a new, unclicked card** to earn another point.
+5. **Winning:** Successfully click all 10 unique cards without repeating a single one!
+6. **Losing:** If you click on a card that you have *already* clicked during this round, it's Game Over!
 
-### `npm start`
+## 🚀 Technologies Used
+* **React** (UI and Components)
+* **Zustand** (Global State Management for scores and clicked cards)
+* **React Query / TanStack Query** (Data fetching and caching from the API)
+* **RingsDB API** (Providing the card images and data)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good luck, and have fun testing your memory! 🧠✨
