@@ -1,11 +1,11 @@
 import './App.css';
-import CardsWithQuery from './CardList';
+import Cardlist from './CardList';
 
 function App() {
 
   return (
     <div className="App">
-      < CardsWithQuery />
+      < Cardlist />
     </div>
   );
 }
